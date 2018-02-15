@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		C705BFE820358CF300475E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705BFE720358CF300475E55 /* AppDelegate.swift */; };
-		C705BFEA20358CF300475E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705BFE920358CF300475E55 /* ViewController.swift */; };
 		C705BFED20358CF300475E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C705BFEB20358CF300475E55 /* Main.storyboard */; };
 		C705BFEF20358CF300475E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C705BFEE20358CF300475E55 /* Assets.xcassets */; };
 		C705BFF220358CF300475E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C705BFF020358CF300475E55 /* LaunchScreen.storyboard */; };
+		C705BFFF2035949100475E55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705BFFE2035949100475E55 /* LoginViewController.swift */; };
+		C705C001203594B000475E55 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C705C000203594B000475E55 /* SignInView.xib */; };
+		C705C003203594C100475E55 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C705C002203594C100475E55 /* SignUpView.xib */; };
+		C705C005203594DC00475E55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705C004203594DC00475E55 /* User.swift */; };
+		C705C0072035950500475E55 /* StaticUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705C0062035950500475E55 /* StaticUser.swift */; };
+		C705C0092035953B00475E55 /* SignInViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705C0082035953B00475E55 /* SignInViewDelegate.swift */; };
+		C705C00B2035955400475E55 /* SignUpViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705C00A2035955400475E55 /* SignUpViewDelegate.swift */; };
+		C705C00D2035C1B300475E55 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705C00C2035C1B300475E55 /* SignInView.swift */; };
+		C705C00F2035C1C600475E55 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705C00E2035C1C600475E55 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C705BFE420358CF300475E55 /* ios-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C705BFE720358CF300475E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C705BFE920358CF300475E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C705BFEC20358CF300475E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C705BFEE20358CF300475E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C705BFF120358CF300475E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C705BFF320358CF300475E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C705BFFE2035949100475E55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C705C000203594B000475E55 /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		C705C002203594C100475E55 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		C705C004203594DC00475E55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C705C0062035950500475E55 /* StaticUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticUser.swift; sourceTree = "<group>"; };
+		C705C0082035953B00475E55 /* SignInViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewDelegate.swift; sourceTree = "<group>"; };
+		C705C00A2035955400475E55 /* SignUpViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewDelegate.swift; sourceTree = "<group>"; };
+		C705C00C2035C1B300475E55 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C705C00E2035C1C600475E55 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,62 @@
 		C705BFE620358CF300475E55 /* ios-project */ = {
 			isa = PBXGroup;
 			children = (
+				C705BFFD2035945800475E55 /* Delegates */,
+				C705BFFC2035944700475E55 /* Singleton */,
+				C705BFFB2035943D00475E55 /* Model */,
+				C705BFFA2035942E00475E55 /* Custom Views */,
+				C705BFF92035941300475E55 /* View Controller */,
 				C705BFE720358CF300475E55 /* AppDelegate.swift */,
-				C705BFE920358CF300475E55 /* ViewController.swift */,
 				C705BFEB20358CF300475E55 /* Main.storyboard */,
 				C705BFEE20358CF300475E55 /* Assets.xcassets */,
 				C705BFF020358CF300475E55 /* LaunchScreen.storyboard */,
 				C705BFF320358CF300475E55 /* Info.plist */,
 			);
 			path = "ios-project";
+			sourceTree = "<group>";
+		};
+		C705BFF92035941300475E55 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C705BFFE2035949100475E55 /* LoginViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		C705BFFA2035942E00475E55 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				C705C000203594B000475E55 /* SignInView.xib */,
+				C705C002203594C100475E55 /* SignUpView.xib */,
+				C705C00C2035C1B300475E55 /* SignInView.swift */,
+				C705C00E2035C1C600475E55 /* SignUpView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		C705BFFB2035943D00475E55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C705C004203594DC00475E55 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C705BFFC2035944700475E55 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				C705C0062035950500475E55 /* StaticUser.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		C705BFFD2035945800475E55 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C705C0082035953B00475E55 /* SignInViewDelegate.swift */,
+				C705C00A2035955400475E55 /* SignUpViewDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +189,8 @@
 			files = (
 				C705BFF220358CF300475E55 /* LaunchScreen.storyboard in Resources */,
 				C705BFEF20358CF300475E55 /* Assets.xcassets in Resources */,
+				C705C001203594B000475E55 /* SignInView.xib in Resources */,
+				C705C003203594C100475E55 /* SignUpView.xib in Resources */,
 				C705BFED20358CF300475E55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C705BFEA20358CF300475E55 /* ViewController.swift in Sources */,
+				C705BFFF2035949100475E55 /* LoginViewController.swift in Sources */,
+				C705C00D2035C1B300475E55 /* SignInView.swift in Sources */,
 				C705BFE820358CF300475E55 /* AppDelegate.swift in Sources */,
+				C705C0072035950500475E55 /* StaticUser.swift in Sources */,
+				C705C00F2035C1C600475E55 /* SignUpView.swift in Sources */,
+				C705C005203594DC00475E55 /* User.swift in Sources */,
+				C705C0092035953B00475E55 /* SignInViewDelegate.swift in Sources */,
+				C705C00B2035955400475E55 /* SignUpViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
