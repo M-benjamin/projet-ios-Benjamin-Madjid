@@ -9,12 +9,10 @@
 class StaticUser {
     static let intance: StaticUser = StaticUser()
     
-    var name: String =  ""
+    var userInfo = User(email: "ben", password: "ten")
     
-    func saveNameIntoStaticUser(name: String) {
-        StaticUser.intance.name = name
-    }
 }
 
-//StaticUser.intance.saveNameIntoStaticUser(name: "Ben")
+
+
 

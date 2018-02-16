@@ -9,7 +9,9 @@
 import UIKit
 
 protocol SignInViewDelegate{
-//    func loginDidTapped(email:String, password:String)
-    func getMail() -> String
-    func getPass() -> String
+    // -> when click on sign up button
+    // ---------------------------------
+    func signInDidTapped(email: String, password: String)
+    
+    func goToRegister()
 }

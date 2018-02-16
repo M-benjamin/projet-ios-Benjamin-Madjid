@@ -9,21 +9,48 @@
 import UIKit
 
 class SignUpView: UIView {
+    
+    var delegate: SignUpViewDelegate? = nil
 
     @IBOutlet var signUp: UIView!
     
+    
+    
     @IBOutlet weak var mailUpField: UITextField!
-    
     @IBOutlet weak var passUpField: UITextField!
-    
-    @IBOutlet weak var conPassUpField: UITextField!
-    
+    @IBOutlet weak var confpassField: UITextField!
     
     @IBAction func upButton(_ sender: Any) {
+        if delegate != nil {
+            if (mailUpField != nil && passUpField != nil && confpassField != nil) {
+                let mail = mailUpField.text
+                let pass = passUpField.text
+                let conPass = confpassField.text
+                delegate?.sighUpDidTapped(email: mail!, password: pass!, conpasswd: conPass!)
+            }
+        }
+        
     }
     
+    
     @IBAction func logUpButton(_ sender: Any) {
+        delegate?.goToLogin()
+        //print("test login")
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)

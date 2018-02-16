@@ -6,4 +6,14 @@
 //  Copyright © 2018 Efrei Paris. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol SignUpViewDelegate{
+    // -> when click on sign up button
+    // ---------------------------------
+    func sighUpDidTapped(email: String, password: String, conpasswd: String)
+    
+    // -> for redirect on login view
+    //----------------------------------
+    func goToLogin()
+}

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,32 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOL-je-PsZ" customClass="SignInView" customModule="ios_project" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T03-lZ-tHW" customClass="SignInView" customModule="ios_project" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yOL-je-PsZ" secondAttribute="height" multiplier="16:9" id="eI4-GH-SNR"/>
-                                </constraints>
-                                <viewLayoutGuide key="safeArea" id="g9w-Ci-A23"/>
+                                <viewLayoutGuide key="safeArea" id="Kml-bg-5ck"/>
                             </view>
-                            <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od9-B2-b86" customClass="SignUpView" customModule="ios_project" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEz-Sn-DkE" customClass="SignUpView" customModule="ios_project" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSA-k7-50G">
+                                        <rect key="frame" x="-177" y="590" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <viewLayoutGuide key="safeArea" id="bUA-zE-rgG"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="od9-B2-b86" secondAttribute="height" multiplier="16:9" id="ZaP-c9-JWl"/>
-                                </constraints>
-                                <viewLayoutGuide key="safeArea" id="ZOm-0d-9Qz"/>
+                                <viewLayoutGuide key="safeArea" id="DjS-xc-f6J"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="od9-B2-b86" firstAttribute="width" secondItem="od9-B2-b86" secondAttribute="height" multiplier="16:9" id="9NP-gb-mzC"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="signInView" destination="yOL-je-PsZ" id="9kO-gK-rG4"/>
-                        <outlet property="signUpView" destination="od9-B2-b86" id="eDK-yc-S5a"/>
+                        <outlet property="signInView" destination="T03-lZ-tHW" id="7r8-bP-g4k"/>
+                        <outlet property="signUpView" destination="pEz-Sn-DkE" id="LQ9-dA-1pZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

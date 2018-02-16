@@ -12,40 +12,47 @@ class SignInView: UIView {
     
     var delegate: SignInViewDelegate?
     
-//    func loginAction() {
-//        if let del = delegate {
-//            print(del.loginDidTapped(email: "ben@mail.com", password: "ben"))
-//        } else {
-//            print("Delegate not found")
-//        }
-//    }
+
     
     @IBAction func RegisterIn(_ sender: UIButton) {
+        delegate?.goToRegister()
+//        print("test login")
     }
-    @IBAction func loginIn(_ sender: UIButton) {
-    }
+    
     @IBOutlet weak var passIn: UITextField!
     @IBOutlet weak var mailIn: UITextField!
-    func printMail()  {
-        if let del = delegate {
-            print(del.getMail)
-        } else {
-            print("Delegate not found")
+    
+    
+    
+    @IBAction func loginIn(_ sender: Any) {
+        if delegate != nil {
+            if (mailIn != nil && passIn != nil) {
+                let mailInput = mailIn.text
+                let passInput = passIn.text
+                
+                delegate?.signInDidTapped(email: mailInput!, password: passInput!)
+            }
         }
     }
     
-    func printPass()  {
-        if let del = delegate {
-            print(del.getPass())
-        } else {
-            print("Delegate not found")
-        }
-    }
+   
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     @IBOutlet var LoginView: UIView!
  
-    
-  
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -66,4 +73,12 @@ class SignInView: UIView {
     
    
 
+}
+
+extension LoginViewController : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
